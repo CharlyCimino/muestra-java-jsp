@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejemplos de Servlets y JSPs</title>
+        <link rel="stylesheet" href="css/estilo.css"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>Servlets y JSPs</h1>
+        <p>Ejemplos de la PPT <a href="https://charlycimino.com/recursos/ppt/Java/Java%20Web%20JSP" target="_blank">"Java Web: JSP"</a> </p>
+        <ol>
+            <li><a href="servlet-jsp" target="_blank">servlet-jsp1</a>: Este enlace lleva a un servlet que luego redirecciona a un JSP (observar código fuente del servidor)</li>
+            <li>Ejemplos de EL (Expression Language)</li>
+            <ol>
+                <li><a href="el/servlet-jsp-el1?nombreCli=Hugo&edadCli=30" target="_blank">el/servlet-jsp-el1?nombreCli=Hugo&edadCli=30</a>: Este enlace lleva a un servlet que luego redirecciona a un JSP sin ningún agregado (observar código fuente del servidor)</li>
+                <li><a href="el/servlet-jsp-el2?nombreCli=Hugo&edadCli=30" target="_blank">el/servlet-jsp-el2?nombreCli=Hugo&edadCli=30</a>: Este enlace lleva a un servlet que crea y liga atributos a diferentes scopes, luego redirecciona a un JSP (observar código fuente del servidor)</li>
+                <li><a href="el/el2.jsp?nombreCli=Hugo&edadCli=30" target="_blank">el/el2.jsp?nombreCli=Hugo</a>: Este enlace lleva directamente al JSP anterior, sin pasar por el servlet (observar lo que sucede con algunos valores)</li>
+                <li><a href="el/servlet-jsp-el3" target="_blank">el/servlet-jsp-el3</a>: Este enlace lleva a un servlet que crea y liga una cookie, luego redirecciona a un JSP (observar código fuente del servidor)</li>
+                <li><a href="el/servlet-jsp-el4" target="_blank">el/servlet-jsp-el4</a>: Este enlace lleva a un servlet que crea y liga un <em>bean</em> a la solicitud, luego redirecciona a un JSP (observar código fuente del servidor)</li>
+            </ol>
+            <li><a href="rutas.jsp">rutas.jsp</a>: Este enlace lleva a un JSP que permite ver y comprender cómo escribir las rutas relativas a otros recursos de la aplicación web</li>
+            <li><a href="prueba-de-rutas/rutas2.jsp">prueba-de-rutas/rutas2.jsp</a>: Este enlace lleva a un JSP (dentro de una carpeta) que permite ver y comprender cómo escribir las rutas relativas a otros recursos de la aplicación web</li>
+            <li>Ejemplos de JSTL (Jakarta Standard Tag Library)</li>
+            <ol>
+                <li><a href="jstl/jstl_import.jsp" target="_blank">jstl/jstl-import.jsp</a>: Este enlace lleva a un JSP que demuestra el funcionamiento de la etiqueta &lt;c:import&gt;</li>
+                <li><a href="jstl/servlet-jsp-jstl-if" target="_blank">jstl/servlet-jsp-jstl-if</a>: Este enlace lleva a un servlet que crea y liga un <em>bean</em> a la solicitud, luego redirecciona a un JSP que demuestra el funcionamiento de la etiqueta &lt;c:if&gt;</li>
+                <li><a href="jstl/servlet-jsp-jstl-choose" target="_blank">jstl/servlet-jsp-jstl-choose</a>: Este enlace lleva a un servlet que crea y liga un <em>bean</em> a la solicitud, luego redirecciona a un JSP que demuestra el funcionamiento de la etiqueta &lt;c:choose&gt;</li>
+                <li><a href="jstl/servlet-jsp-jstl-foreach" target="_blank">jstl/servlet-jsp-jstl-foreach</a>: Este enlace lleva a un servlet que crea y liga un <em>bean</em> y una lista de <em>beans</em> a la solicitud, luego redirecciona a un JSP que demuestra el funcionamiento de la etiqueta &lt;c:foreach&gt;</li>
+                <li><a href="jstl/servlet-jsp-jstl-forTokens" target="_blank">jstl/servlet-jsp-jstl-forTokens</a>: Este enlace lleva a un servlet que crea y liga una cadena con valores separados por comas a la solicitud, luego redirecciona a un JSP que demuestra el funcionamiento de la etiqueta &lt;c:forTokens&gt;</li>
+            </ol> 
+            <li><a href="obsoleto">[OBSOLETO] Scriptlets y directivas JSP</a></li>
+        </ol>
+    </body>
+</html>

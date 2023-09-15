@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+
+    <jsp:directive.page contentType="text/html" pageEncoding="UTF-8" import="java.time.LocalDateTime,java.time.format.DateTimeFormatter"/>
+    
+    <jsp:declaration>
+        private int contVisitas = 0;
+    </jsp:declaration>
+
+    <html>
+        <head>
+            <link rel="stylesheet" href="../css/estilo.css"/>
+            <title>Documento JSP (.jspx)</title>
+        </head>
+        <body>
+            <h1>Documento JSP (.jspx)</h1>
+
+            <p>Los documentos JSP (extensión <code>.jspx</code>) permiten continuar escribiendo scriptlets, declaraciones, expresiones, directivas, etc, pero con una sintaxis más parecida a XML.
+                Observá el código fuente (del servidor) para conocer la sintaxis. </p>
+
+            <p><strong>Mostrando un mensaje: </strong>
+                <jsp:text>Este mensaje es impreso desde una etiqueta jsp:text</jsp:text>
+            </p>
+
+            <p><strong>2 + 2 es </strong>
+                <jsp:expression>2+2</jsp:expression>
+            </p>
+
+            <p><strong>Esta es la visita nº: </strong>
+                <jsp:scriptlet>
+                    contVisitas++;
+                    out.print(contVisitas);
+                </jsp:scriptlet>
+            </p>
+
+            <p><strong>Fecha y hora de respuesta: </strong>
+                <jsp:scriptlet>
+                    DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
+                    String fechaStr = dtf.format(LocalDateTime.now());
+                    out.print(fechaStr);
+                </jsp:scriptlet>
+            </p>
+            
+            <p><a href="index.html">Volver...</a></p>
+        </body>
+    </html>
+
+
+</jsp:root>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+   version="6.0">
+    <session-config>
+        <session-timeout>
+            1
+        </session-timeout>
+    </session-config>
+    
+    <servlet>  
+        <servlet-name>servlet3</servlet-name>  
+        <servlet-class>ar.charlycimino.muestra.java.jsp.el.Servlet_JSP_EL3</servlet-class>  
+        <!-- Parámetros de inicio del servlet (solo para él) -->
+        <init-param>  
+            <param-name>id</param-name>  
+            <param-value>1234</param-value>  
+        </init-param>  
+    </servlet>  
+    
+    <servlet-mapping>
+        <servlet-name>servlet3</servlet-name>
+        <url-pattern>/el/servlet-jsp-el3</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Parámetros de inicio de la aplicación (global) -->
+    <context-param>
+        <param-name>motorBD</param-name>
+        <param-value>MySQL</param-value>
+    </context-param>
+</web-app>

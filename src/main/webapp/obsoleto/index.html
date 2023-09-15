@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejemplos de Servlets y JSPs</title>
+        <link rel="stylesheet" href="../css/estilo.css"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>Scriptlets y directivas JSP</h1>
+        <p>Considerados obsoletos, pero aún hay mucho código escrito con ellos.</p>
+        <ol>
+            <li><a href="01-expresiones.jsp" target="_blank">JSP con expresiones</a></li>
+            <li><a href="02-scriptlets.jsp" target="_blank">JSP con <em>scriptlets</em></a></li>
+            <li><a href="03-directivas.jsp" target="_blank">JSP con directivas</a></li>
+            <li><a href="#prueba04">Probar form con expresiones, scriptlets y directivas</a></li>
+            <li><a href="05-jspDocument.jspx" target="_blank">Documento JSP (.jspx)</a></li>
+            <li><a href="06-javabeans.jsp" target="_blank">Manejo de <em>JavaBeans</em></a></li>
+            <li><a href="#prueba07">Probar form con <em>JavaBean</em></a></li>
+        </ol>
+        <hr/>
+        <h1>Prueba de formulario con Java Servlet y JSP (Método POST)</h1>
+        <h2>El controlador de este form incluye manejo de error personalizado usando directivas.</h2>
+        <form id="prueba04" name="form1" action="04-procesarForm1.jsp" method="post" >
+            <label for="fname1">Nombre:</label> <br>
+            <input type="text" id="fname1" name="fname">
+            <br/><br/>
+            <label for="cantH">Cantidad de hijos (poné una letra para generar un error):</label> <br>
+            <input type="text" id="cantH" name="cantHijos">
+            <br/><br/>
+            <label for="mensaje1">Tu mensaje:</label> <br>		
+            <textarea id="mensaje1" name="message" rows="5" cols="30">Un mensaje de prueba...</textarea>
+            <br/><br/>
+            <input type="submit">
+            <input type="reset">
+        </form>
+        <hr/>
+        <h1>Prueba de formulario con Java Servlet, JSP y <em>JavaBean</em> (Método POST)</h1>
+        <form id="prueba07" name="form2" action="07-procesarForm2.jsp" method="post" >
+            <label for="fname2">Nombre:</label> <br>
+            <input type="text" id="fname2" name="nombre">
+            <br/><br/>
+            <label for="sname2">Apellido:</label> <br>
+            <input type="text" id="sname2" name="apellido">
+            <br/><br/>
+            <label for="cantH2">Cantidad de hijos:</label> <br>
+            <input type="text" id="cantH2" name="nroHijos">
+            <br/><br/>
+            <label for="interes2">¿Interesada?</label>
+            <input type="checkbox" id="interes2" name="interesada"/>
+            <br/><br/>
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </body>
+</html>
